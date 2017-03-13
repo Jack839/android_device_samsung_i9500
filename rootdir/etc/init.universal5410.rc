@@ -30,7 +30,8 @@ on post-fs-data
     mkdir /data/app/mcRegistry 0775 system system
 
 # create data/gps for GPS daemon
-    mkdir /data/system/gps 771 gps system
+    mkdir /data/gps 771 system system
+    chown system system /data/gps
 
 # create camera directory
     mkdir /data/camera 0700 media media
@@ -426,7 +427,6 @@ service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class main
     user gps
     group system inet net_raw
-    disabled
 
 # service for TZPR provisioning version check app
 service scranton_RD /system/bin/scranton_RD
@@ -468,8 +468,6 @@ on property:sys.perf.profile=2
     write /sys/devices/system/cpu/cpufreq/iks-cpufreq/max_freq 1600000
 
 on property:init.svc.bootanim=stopped
-    # start gpsd late to prevent it from changing /data/system
-    start gpsd
     start camera_id
 
 on property:sys.boot_completed=1
