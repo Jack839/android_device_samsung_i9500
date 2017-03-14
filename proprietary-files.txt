@@ -71,7 +71,6 @@ vendor/firmware/bcm2079xB4_firmware.ncd
 vendor/firmware/bcm2079xB4_pre_firmware.ncd
 
 # Radio
-bin/cbd
 lib/libsecnativefeature.so
 lib/libsec-ril.so
 

@@ -167,6 +167,9 @@ PRODUCT_PACKAGES += \
     power.universal5410
 
 # Radio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ril/sbin/cbd:system/bin/cbd
+
 PRODUCT_PACKAGES += \
     libsecril-client \
     libsecril-client-sap
