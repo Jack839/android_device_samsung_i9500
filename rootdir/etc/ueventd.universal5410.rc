@@ -1,8 +1,8 @@
 /dev/pvrsrvkm             0666   system     graphics
 /dev/pvr_sync             0666   system     graphics
-/dev/ump                  0666   system     system
+/dev/ump                  0666   system     graphics
 /dev/ion                  0666   system     system
-/dev/video6               0660   media      media
+/dev/video6               0660   media      drmrpc
 /dev/video7               0660   media      media
 
 # gscalers
@@ -21,7 +21,7 @@
 /dev/video38              0660   media      camera
 
 /dev/video34              0660   system     system
-/dev/v4l-subdev*          0660   system     system
+/dev/v4l-subdev*          0660   system     camera
 /dev/media0               0660   system     camera
 /dev/media1               0660   system     camera
 
@@ -53,7 +53,7 @@
 /dev/video14              0660   media      media
 
 # FIMG2D
-/dev/fimg2d               0666   system     graphics
+/dev/fimg2d               0666   system     media
 
 # sensor sysfs properties
 /sys/devices/virtual/input/input*	poll_delay	0660	system	radio
@@ -110,4 +110,4 @@
 # DRM
 /dev/mobicore             0600   drmrpc     drmrpc
 /dev/mobicore-user        0660   drm        drmrpc
-/dev/s5p-smem             0660   drm        drmrpc
+/dev/s5p-smem             0660   system     drmrpc
