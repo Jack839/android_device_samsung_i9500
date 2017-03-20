@@ -37,7 +37,7 @@ on post-fs-data
     chown system system /data/gps
 
 # create camera directory
-    mkdir /data/camera 0700 media media
+    mkdir /data/camera 0770 media system
 
 # restore permissions for gps
     mkdir /data/system 0775 system system
