@@ -2,6 +2,9 @@ import init.universal5410.usb.rc
 import init.universal5410.wifi.rc
 
 on init
+
+    export LD_SHIM_LIBS "/system/bin/gpsd|libdmitry.so"
+
     symlink /sdcard /storage/sdcard0
 
     mkdir /efs 0771 radio system
@@ -426,7 +429,7 @@ service cpboot-daemon /system/bin/cbd -d -txmm626 -bh -mh -p 13
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class main
     user gps
-    group system inet net_raw
+    group system wakelock inet net_raw
 
 # Sensorhub service
 service sensorhubservice /system/bin/sensorhubservice
