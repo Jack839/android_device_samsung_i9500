@@ -422,23 +422,32 @@
         <path name="voice-headphones" />
     </path>
 
+    <path name="voice-bt-sco-headset">
+        <path name="verb-voicecall" />
+        <path name="enable-bt-sco" />
+        <path name="gain-voice-bt-sco" />
+    </path>
+
+    <path name="voice-bt-sco-headset-wb">
+        <path name="voice-bt-sco-headset" />
+    </path>
+
     <path name="hdmi">
         <path name="verb-normal" />
         <path name="enable-aux-digital" />
     </path>
 
     <path name="speaker-and-hdmi">
-        <!-- Empty path -->
+        <path name="verb-normal" />
+        <path name="enable-aux-digital" />
+        <path name="enable-speaker" />
+        <path name="gain-voice-speaker" />
     </path>
 
     <path name="bt-sco-headset">
         <path name="verb-normal" />
         <path name="enable-bt-sco" />
         <path name="gain-media-bt-sco" />
-    </path>
-
-    <path name="bt-sco-headset-wb">
-        <path name="bt-sco-headset" />
     </path>
 
     <!-- ########## Capture ########## -->
@@ -508,18 +517,24 @@
         <path name="voice-headset-mic" />
     </path>
 
-    <path name="hdmi-mic">
-        <!-- Empty path -->
-    </path>
-
-    <path name="bt-sco-mic">
+    <path name="voice-bt-sco-mic">
         <path name="channel-none" />
         <path name="verb-voicecall" />
         <path name="enable-bt-sco-hs-mic" />
     </path>
 
-    <path name="bt-sco-mic-wb">
-        <path name="bt-sco-mic" />
+    <path name="voice-bt-sco-mic-wb">
+        <path name="voice-bt-sco-mic" />
+    </path>
+
+    <path name="hdmi-mic">
+        <path name="speaker-mic" />
+    </path>
+
+    <path name="bt-sco-mic">
+        <path name="channel-none" />
+        <path name="verb-normal" />
+        <path name="enable-bt-sco-hs-mic" />
     </path>
 
     <path name="voice-rec-headset-mic">
