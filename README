@@ -9,6 +9,5 @@ Known Issues:
 * All Security Barriers introduced with new Android Security Patches are broken
 * SELinux Policies are not ready to be used with Enforcing Mode
 * Voice-Calls seem to be affected by an echo effect issue
-* Media Playback using A2DP causes the device to reboot (kernel panic)
 * Some UI Corruption issues here and there
 * MTP Connection Stability needs to be improved
