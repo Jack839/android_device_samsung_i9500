@@ -44,7 +44,7 @@
 /dev/video19              0660   system     system
 
 # FIMG2D
-/dev/fimg2d               0666   system     graphics
+/dev/fimg2d               0666   system     media
 
 # JPEG
 /dev/video11              0660   media      media
@@ -53,7 +53,7 @@
 /dev/video14              0660   media      media
 
 # FIMG2D
-/dev/fimg2d               0666   system     media
+/dev/fimg2d               0666   system     graphics
 
 # sensor sysfs properties
 /sys/devices/virtual/input/input*	poll_delay	0660	system	radio
