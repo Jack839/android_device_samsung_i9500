@@ -34,6 +34,9 @@ lib/libwrappergps.so
 # HWC
 vendor/lib/hw/gralloc.exynos5.so
 
+# OMX
+lib/hw/libOMX.Exynos.AVC.Encoder.so
+
 # Media
 vendor/firmware/fimc_is_gumi_fw2.bin
 vendor/firmware/fimc_is_sec_fw2.bin
