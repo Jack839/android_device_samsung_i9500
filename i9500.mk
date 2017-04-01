@@ -173,11 +173,16 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libsecril-client \
-    libsecril-client-sap
+    libsecril-client-sap \
+    libril \
+    librilutils \
+    rild \
+    libxml2 \
+    libprotobuf-cpp-full \
+    modemloader
 
-# Samsung
-PRODUCT_PACKAGES += \
-    SamsungServiceMode
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=unknown
 
 # Wifi
 PRODUCT_PACKAGES += \
