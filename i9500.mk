@@ -181,6 +181,9 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     modemloader
 
+PRODUCT_PACKAGES += \
+    SamsungServiceMode
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown
 
