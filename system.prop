@@ -37,3 +37,4 @@ telephony.lteOnCdmaDevice=0
 
 # WiFi
 wifi.interface=wlan0
+wlan.wfd.hdcp=disable
