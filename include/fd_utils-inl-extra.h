@@ -14,5 +14,4 @@
  * limitations under the License.
  */
 #define PATH_WHITELIST_EXTRA_H \
-    "/dev/pvrsrvkm", \
-    "/dev/pvr_sync",
+    "anon_inode:dmabuf",
